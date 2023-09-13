@@ -62,7 +62,7 @@ function App() {
             <img className="leaf_photo_one" src={leaf1} alt=""/>
         </div>
         <div className="col-sm short_colum ">
-                <h3 className="me">Who I am</h3>
+                <h3 className="me" dangerouslySetInnerHTML={{ __html:t('main.me')}}></h3>
                 <p className="text_me" dangerouslySetInnerHTML={{ __html:t('main.text_me')}}>
                 </p>
         </div>
@@ -75,7 +75,7 @@ function App() {
     <div className="container">
         <div className="row">
             <div className="col-sm">
-                <h3 className="hobbies">Interests</h3>
+                <h3 className="hobbies"dangerouslySetInnerHTML={{ __html:t('main.hobbies')}}></h3>
                 <p className="hobbies_text_one" dangerouslySetInnerHTML={{ __html:t('main.hobbies_text_one')}}>
                 </p>
             </div>
@@ -106,7 +106,7 @@ function App() {
                 <img className="hobbies_photo_two" src={italy} alt=""/>
             </div>
             <div className="col-sm">
-                <span className="training_title">Education</span>
+                <span className="training_title" dangerouslySetInnerHTML={{ __html:t('main.training_title')}}></span>
                 <p className="training_text" dangerouslySetInnerHTML={{ __html:t('main.training_text')}}>
                 </p>
             </div>
@@ -133,7 +133,7 @@ function App() {
         <div className="col-sm space  ">
             <img className="leaf_photo_three" src={leaf3} alt=""/>
         </div>
-        <div className="col-sm space ">
+        <div className="col-sm space">
             <p className="training_text_three" dangerouslySetInnerHTML={{ __html:t('main.training_text_three')}}>
             </p>
         </div>
@@ -149,7 +149,7 @@ function App() {
     <div className=" container footer_box">
         <div className="row">
             <div className="col-sm p-5">
-                <h3 className="contact_title">Contacts</h3>
+                <h3 className="contact_title" dangerouslySetInnerHTML={{ __html:t('main.contact_title')}}></h3>
                 <p className="footer_contact" dangerouslySetInnerHTML={{ __html:t('main.footer_contact')}}>
                 </p>
             </div>
